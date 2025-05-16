@@ -9,7 +9,7 @@ const Recipes = () => {
 
     useEffect(() => {
         getSearchedResult();
-    }, [searchedQuery])
+    }, [getSearchedResult])
 
     const getSearchedResult = async () => {
         let result = await getRecipes(searchedQuery);
